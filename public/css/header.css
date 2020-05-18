@@ -1,0 +1,99 @@
+/*---------header-------*/
+
+.part1 {
+    display: flex;
+    justify-content: space-between;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 100%;
+}
+.logo {
+    text-align: center;
+    padding-top: 10px
+}
+.logo img {
+    width: 30%;
+}
+.logo-text {
+    font-family: 'Caveat', cursive;
+    font-size: 17px;
+    font-weight: bold;
+    color: #2B1B19;
+}
+header a {
+    text-decoration: none;
+    color: #04313C;
+}
+nav {
+    padding: 25px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+}
+nav a {
+    font-weight: 500;
+    padding: 35px 12px;
+}
+nav a:hover {
+    background-color: #04313C;
+    transition: background .5s;
+    color: #fff;
+}
+.login-buttons {
+    padding: 20px 10px;
+    padding-left: 0;
+    display: flex;
+}
+.btn {
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #04313C;
+    padding: 10px 20px;
+    background-color: #04313C;
+    color: #fff;
+    border-radius: 7px;
+}
+.btn:hover {
+    background-color: #fff;
+    transition: background .5s;
+    color: #04313C;
+}
+.btn.login {
+    padding-right: 60px;
+    padding-left: 60px;
+    background-color: #fff;
+    color: #04313C;
+}
+.btn.sign-up {
+    margin-left: 5px;
+}
+.btn.login:hover {
+    background-color: #04313C;
+    transition: background .5s;
+    color: #fff;
+}
+.nav-menu {
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    .hero-div {
+        top: 60%;
+    }
+    .menu-btn {
+        display: none;;
+    }
+    .login-buttons {
+        display:none;
+    }
+    .nav-menu {
+        display:block;
+        text-align: right;
+        padding-top: 10px;
+    }
+    header {
+        padding: 20px 40px;
+    }
+}

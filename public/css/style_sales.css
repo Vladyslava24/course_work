@@ -1,0 +1,574 @@
+/*--------sales--------*/
+
+.sales {
+    padding: 40px 50px 90px;
+    background: #04313C;
+    margin: 30px 0;
+}
+.sales-container {
+    display: flex;
+}
+.cards-btn {
+    width: 100%;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.cards-btn:hover {
+    transition: background .3s ease;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.938);
+}
+.cards {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 100%;
+}
+.cards img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+.cards-text {
+    padding: 0 20px;
+    text-align: center;
+}
+.cards-title {
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+.cards-text h2 {
+    margin: 10px 0;
+    color: #04313C;
+    font-size: 22px;
+}
+.cards-text p {
+    color: #4B999F;
+    font-size: 14px;
+    margin: 0;
+}
+.cards-text h3 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: #155A60;
+}
+
+@media screen and (max-width: 900px) {
+	.sales-container {
+        flex-direction: column;
+        margin-right: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+/*---------Sale Description----------*/
+.cards-text h1 {
+    margin: 20px;
+    color: #04313C;
+    font-size: 30px;
+    text-shadow: 1px -1px 1px #04313C;
+}
+.lineThrough{
+    text-decoration: line-through;
+}
+.parent {
+    margin: 10%;
+    padding: 0px 10px 15px;
+   }
+.border_text{
+    color: #04313C;
+    font-size: 22px;
+    border: 1px solid #04313C;
+    margin: 10px;
+    border-radius: 7px;
+    padding: 12px;
+}
+
+
+
+
+
+
+
+
+
+/*---------tours----------*/
+.tours {
+    margin: 20px;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+.column {
+    flex: 33%;
+    padding: 0 4px;
+}
+.cards-tours {
+    margin: 5px;
+    margin-bottom: 60px;
+}
+.cards-tours:hover {
+    box-shadow: 0px 4px 20px rgba(5, 21, 27, 0.425);
+    transition: background .5s;
+}
+.tours-text {
+    font-size:35px;
+    text-align: center;
+    margin: 70px 0 50px;
+    color: #012229;
+}
+.cards-tours img{
+    width: 100%;
+}
+.text-block {
+    padding: 0 20px 40px;
+}
+.text-block h2 {
+    color: #04313C;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+.text-block p {
+    margin-top: 7px;
+    margin-bottom: 35px;
+    font-size: 17px;
+    color: #155A60;
+}
+.more {
+    color: #04313C;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+}
+@media screen and (max-width: 900px) {
+	.column {
+        flex: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+
+}
+
+/*--------book-tour--------*/
+.book-tour {
+    height: 500px;
+    background-image: linear-gradient(rgba(14, 50, 53, 0.39), rgba(13, 37, 41, 0.349)),url('../img/robin-noguier-sydwCr54rf0-unsplash.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 100px;
+    font-size: 40px;
+    text-align: center;
+}
+.book-text{
+    color: #fff;
+    font-weight: 500;
+    margin: 50px;
+}
+.btn.book {
+    background-color: #fff;
+    color: #021F26;
+    padding: 20px 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    transition: background .5s;
+}
+.btn.book:hover {
+    cursor: pointer;
+    background-color: #021F26;
+    transition: background .5s;
+    color: #fff;
+}
+@media screen and (max-width: 600px) {
+	.book-tour {
+        font-size: 25px;
+        padding: 80px
+    }
+    .btn.book {
+        padding: 20px 25px;
+        font-size: 13px;
+    }
+    .book-text {
+        margin: 50px 0;
+    }
+}
+
+/*--------footer------*/
+footer {
+    padding: 20px;
+
+}
+.row-1 {
+    display: flex;
+}
+.col-1 {
+    flex:33%;
+}
+.col-1 ul{
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    padding: 10px;
+    text-align: center
+}
+.menu-btn.footer {
+    text-decoration: none;
+    color: #4B999F;
+}
+.menu-btn.footer-1, .col-1.contacts {
+    color: #04313C;
+    text-decoration: none;
+    font-size: 18px;
+}
+.logo.footer {
+    width: 20%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+.menu-footer {
+    display: none;
+}
+.social-media {
+    display: none;
+}
+@media screen and (max-width: 900px) {
+	.row-1 {
+        display: none;
+    }
+    .menu-footer {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+    }
+    .btn-footer {
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+        color: #04313C;
+    }
+    .social-media {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .social-media a {
+        text-align: center;
+    }
+    .social-media img{
+        width: 25%;
+    }
+    .logo.footer {
+        padding-bottom: 5px;
+    }
+}
+
+
+
+
+
+
+
+/*-----------TYP-----------*/
+
+/*------------images---------*/
+
+.image-section {
+    background-color: #04313C;
+    padding: 20px;
+    padding-bottom: 50px;
+    color: #fff;
+}
+.hotel {
+    display: flex;
+    font-size: 35px;
+    padding: 20px;
+    padding-bottom: 0;
+}
+.hotel-title {
+    padding-right: 20px;
+}
+.image-section p {
+    padding: 20px;
+    margin: 0;
+}
+.img-hotel img {
+    vertical-align: middle;
+  }
+  .img-hotel {
+    margin: 10px 20px;
+  }
+  .img-hotel {
+    position: relative;
+  }
+  .Slides {
+    display: none;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .next {
+    right:0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+.numbertext {
+    background-color: rgba(255, 255, 255, 0.295);
+    text-align: center;
+    color: #021F26;
+    font-size: 20px;
+    margin: 10px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0%;
+  }
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  .row-2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column-2 {
+    float: left;
+    width: 16.66%;
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+/*----------icons----------*/
+.icons-section {
+    padding: 30px 60px;
+    padding-right: 0;
+}
+.sections {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+}
+.sections h2 {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+.icons-section img {
+    width: 15%;
+}
+@media screen and (max-width: 900px) {
+    .icons-section .column {
+        flex: 50%;
+    }
+    .icons-section .column.last {
+        display: flex;
+    }
+    .icons-section {
+        padding: 30px 40px;
+        padding-right: 0;
+    }
+
+	.stars {
+		display: none;
+	}
+}
+@media screen and (max-width: 650px) {
+    .icons-section .column {
+        flex: 50%;
+    }
+    .icons-section .column.last {
+        display: flex;
+    }
+    .icons-section {
+        padding: 30px 0;
+        padding-right: 0;
+    }
+    .sections h2 {
+        font-size: 12px;
+    }
+    .icons-section img {
+        width: 25%;
+    }
+	.card-text {
+		font-size: 20px;
+	}
+}
+
+/*--------description--------*/
+.description {
+    padding: 10px 50px;
+
+}
+.title {
+    font-size: 50px;
+    color: #04313C;
+}
+.description-section {
+    font-size: 15px;
+    color: #011C22;
+}
+.description-section li {
+    text-align: left;
+}
+.description-section.p2 {
+    display: flex;
+}
+.description-table {
+    flex: 50%;
+}
+.description-table.p2 li{
+    padding: 5px;
+}
+.application {
+    padding: 10px 50px 30px;
+    margin-bottom: 50px;
+}
+.application .title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.application-card {
+    display:flex;
+    padding: 20px 50px 20px;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.43);
+}
+.application .cards {
+    margin: 10px 80px;
+    height: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card-text {
+    font-size: 30px;
+    padding-bottom: 10px;
+    color: rgba(1, 28, 34, 0.71);
+    text-align: center;
+}
+.row-4 {
+    display: flex;
+}
+.col-25 {
+    flex: 100%;
+}
+.proposition, .contact-info {
+	flex: 50%;
+}
+.contact-info form {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+.contact-info input {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+}
+.contact-info label {
+    color: rgba(4, 49, 60, 0.71);
+}
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid rgba(4, 49, 60, 0.71);
+	resize: vertical;
+  }
+.contact-info .btn:hover {
+    cursor: pointer;
+}
+
+/*-------footer*--------*/
+.tour {
+    background: #04313C;
+}
+.tour li {
+    color: #fff;
+}
+.tour .logo-text {
+    color: #fff;
+    font-weight: 100;
+}
+@media screen and (max-width: 900px) {
+    .hotel-title {
+        font-size: 25px;
+    }
+    .image-section p{
+        padding-top: 0;
+        font-size: 15px;
+    }
+    .application .cards {
+        margin: 0;
+    }
+    .application {
+        padding: 10px;
+    }
+    .card-text {
+        font-size: 30px;
+    }
+    .application-card {
+        flex-direction: column;
+        box-shadow: none;
+        padding: 0;
+    }
+    .application .cards {
+        box-shadow: none;
+        margin: 0;
+    }
+    .application h3 {
+        font-size: 37px;
+    }
+    .application h2 {
+        font-size: 28px;
+    }
+    .application p {
+        font-size: 18px;
+    }
+    .contact-info form {
+        width: 100%;
+    }
+    .tour a{
+        color: #fff;
+    }
+    .description-section.p2 {
+        flex-direction: column;
+    }
+    .title {
+        font-size: 30px;
+    }
+}
