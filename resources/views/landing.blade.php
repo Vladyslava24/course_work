@@ -69,9 +69,10 @@
             <div class="tours-text">Популярні тури</div>
             <div class="row">
                 @foreach($tours as $tour)
+
                 <div class="column">
                     <div class="cards-tours card1">
-                        <img src="/img/rebe-adelaida-zunQwMy5B6M-unsplash.jpg">
+                        <img src="{{$tour->images[0]['img']}}" alt="{{$tour->hotel}}">
                         <div class="text-block">
                             <h2>{{$tour->hotel}}</h2>
                             <p>від {{$tour->price}} UAH</p>

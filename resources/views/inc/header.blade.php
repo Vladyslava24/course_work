@@ -1,10 +1,12 @@
 <div class="contain">
     <header>
         <div class="part1">
-            <div class="logo">
-                <img src="img/world.svg">
-                <div class="logo-text">World&travel</div>
-            </div>
+            <a class="logo-btn" href="{{route('landing')}}">
+                <div class="logo">
+                    <img src="/img/world.svg">
+                    <div class="logo-text">World&travel</div>
+                </div>
+            </a>
             <nav>
                 <a class="menu-btn" href="{{route ('tour')}}">Тури</a>
                 <a class="menu-btn" href="{{route ('cruise')}}">Круїзи</a>

@@ -15,6 +15,8 @@ Route::get('/tour', function () {
     return view('container_tour');
 })->name('tour');
 
+Route::get('/tour', 'TourContainerController@allData')->name('tour');
+
 Route::get('/one-tour', function () {
     return view('tour');
 })->name('one-tour');

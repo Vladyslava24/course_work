@@ -47,7 +47,7 @@
             <div class="card">
                 <div class="picture" id="venecia">
                     <div class="grey">
-                        <img src="pictures/cruise/mediterranean.jpeg" alt="#">
+                        <img src="pictures/cruise/{{$cruise->images[0]['img']}}" alt="{{$cruise->direction}}">
                     </div>
                     <span class="country">{{$cruise->direction}}</span>
                     <br>

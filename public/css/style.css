@@ -26,6 +26,9 @@ header {
     text-align: center;
     padding-top: 10px
 }
+.logo-btn {
+    text-decoration: none;
+}
 .logo img {
     width: 30%;
 }
@@ -686,5 +689,113 @@ input[type=text], select, textarea {
     }
     .title {
         font-size: 30px;
+    }
+}
+
+/*----------УВІЙТИ---------*/
+
+.login-container {
+    background-image: linear-gradient(rgba(14, 22, 46, 0.5), rgba(19, 31, 61, 0.5)), url('../img/robin-noguier-sydwCr54rf0-unsplash.jpg');
+    background-size: cover;
+    background-repeat: none;
+    padding: 70px;
+    color: #04313C;
+}
+.login-div {
+    background-color: #fff;
+    width: 50%;
+    margin: auto;
+    padding: 30px 40px 60px;
+    box-shadow: 0px 4px 40px #000000;
+}
+.login-title {
+    font-size: 35px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.login-div input {
+    margin: 5px 0;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: rgba(6, 129, 159, 0.16);
+    border: none;
+}
+.btn-login {
+    text-decoration: none;
+    margin: 15px 0;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+}
+.login-social-media-wrap {
+    display: flex;
+}
+.login-social-media-wrap a{
+    flex: 50%;
+    margin: 0 2px;
+    padding: 0;
+    text-decoration: none;
+    text-align:center;
+}
+.login-social-media-wrap .btn.login {
+    padding: 0;
+}
+.login-social-media {
+    display: flex;
+    justify-content: center;
+    text-align:center;
+}
+.login-social-media img {
+    width: 20%;
+    padding: 10px;
+}
+.login-social-media h3 {
+    font-size: 15px;
+}
+.login-p {
+    font-size: 15px;
+    padding: 40px 0;
+    text-align: center;
+}
+.register {
+    text-align: center;
+    font-size: 15px;
+}
+.register-btn {
+    text-decoration: none;
+    color: #04313C;
+    padding: 0 10px;
+    font-weight: 900;
+}
+@media screen and (max-width: 900px) {
+    .login-container {
+        padding: 70px 20px;
+    }
+    .login-social-media h3 {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    .login-div {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .login-social-media-wrap {
+        flex-direction: column;
+    }
+    .login-social-media-wrap a{
+        margin-bottom: 10px;
+    }
+    .login-social-media img {
+        width: 10%;
+        padding: 0;
+    }
+    .login-div {
+        width: 95%;
+        padding: 30px 10px 40px;
+    }
+    .login-social-media h3 {
+        font-size: 15px;
+        padding: 0 10px;
     }
 }

@@ -42,23 +42,26 @@
             <span>Всі тури</span>
         </div>
         <div class="row row1">
+            @foreach($tour_containers as $tour_container)
             <div class="col-sm-4">
                 <div class="card">
                     <div class="picture" id="venecia">
                         <div class="grey">
-                            <img src="pictures/tour/venecia.png" alt="#">
+                            <img src="pictures/tour/{{$tour_container->images[0]['img']}}" alt="{{$tour_container->country}}">
                         </div>
-                        <span class="country">Італія, Венеція</span>
+                        <span class="country">{{$tour_container->country}}</span>
                         <br>
-                        <span class="hotel">Olympic Palladium</span>
+                        <span class="hotel">{{$tour_container->hotel}}</span>
                         <br>
-                        <span class="price">від 10 458 UAH</span>
+                        <span class="price">від {{$tour_container->price}} UAH</span>
                         <br>
                         <button class="button"><span>Дізнатись більше</span></button>
                     </div>
                 </div>
+                <div class="space"></div>
             </div>
-            <div class="space_mob"></div>
+            @endforeach
+            <!--<div class="space_mob"></div>
             <div class="col-sm-4">
                 <div class="card">
                     <div class="picture" id="dubai">
@@ -250,7 +253,7 @@
                         <button class="button"><span>Дізнатись більше</span></button>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 @endsection
