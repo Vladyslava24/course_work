@@ -57,6 +57,7 @@ Route::get('/logout', function(){
     return Redirect::to('/');
 });
 
+
 // Маршруты регистрации...
 /*Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');*/

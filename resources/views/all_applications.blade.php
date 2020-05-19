@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.containers')
 
 @section('title')
     Всі заявки

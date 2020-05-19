@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.sales')
 
 @section('title')
     Про нас
@@ -251,5 +251,4 @@
         </div><!-- /.container -->
     </footer>
 </div>
-
 @endsection

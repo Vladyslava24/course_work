@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.containers')
 
 @section('title')
-   Тури
+    Тури
 @endsection
 
 @section('content')

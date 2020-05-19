@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.sales')
 
 @section('title')
-    Акції
+    Акція
 @endsection
 
 @section('content')

@@ -127,7 +127,7 @@
         <div class="book-tour">
             <div class="hero-text">
                 <div class="book-text">Відправимося в подорож разом?</div>
-                <a class="btn book" href="#">Забронювати тур</a>
+                <a class="btn book" href="{{route ('tour')}}">Забронювати тур</a>
             </div>
         </div>
     </main>
