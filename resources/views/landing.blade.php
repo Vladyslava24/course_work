@@ -68,21 +68,22 @@
         <div class="tours">
             <div class="tours-text">Популярні тури</div>
             <div class="row">
+                @foreach($tours as $tour)
                 <div class="column">
                     <div class="cards-tours card1">
                         <img src="/img/rebe-adelaida-zunQwMy5B6M-unsplash.jpg">
                         <div class="text-block">
-                            <h2>Olympic Palladium</h2>
-                            <p>від 10 458 UAH</p>
+                            <h2>{{$tour->hotel}}</h2>
+                            <p>від {{$tour->price}} UAH</p>
                             <a class="more" href="{{route ('one-tour')}}">Дізнатись більше</a>
                         </div>
                     </div>
-                    <div class="cards-tours card1">
+                    <!--<div class="cards-tours card1">
                         <img src="/img/tim-trad-DxupQhBmu4c-unsplash.jpg">
                         <div class="text-block">
                             <h2>Triton Garden</h2>
                             <p>від 14 125 UAH</p>
-                            <a class="more" href="{{route ('one-tour')}}">Дізнатись більше</a>
+                            <a class="more" href="#">Дізнатись більше</a>
                         </div>
                     </div>
                 </div>
@@ -92,7 +93,7 @@
                         <div class="text-block">
                             <h2>MARILENA</h2>
                             <p>від 15 548 UAH</p>
-                            <a class="more" href="{{route ('one-tour')}}">Дізнатись більше</a>
+                            <a class="more" href="#">Дізнатись більше</a>
                         </div>
                     </div>
                     <div class="cards-tours card1">
@@ -100,7 +101,7 @@
                         <div class="text-block">
                             <h2>Grecotel Marine Palace</h2>
                             <p>від 17 658 UAH</p>
-                            <a class="more" href="{{route ('one-tour')}}">Дізнатись більше</a>
+                            <a class="more" href="#">Дізнатись більше</a>
                         </div>
                     </div>
                 </div>
@@ -110,7 +111,7 @@
                         <div class="text-block">
                             <h2>Almyrida Beach</h2>
                             <p>від 13 457 UAH</p>
-                            <a class="more" href="{{route ('one-tour')}}">Дізнатись більше</a>
+                            <a class="more" href="#">Дізнатись більше</a>
                         </div>
                     </div>
                     <div class="cards-tours card1">
@@ -118,10 +119,11 @@
                         <div class="text-block">
                             <h2>Central Hersonissos</h2>
                             <p>від 15 789 UAH</p>
-                            <a class="more" href="{{route ('one-tour')}}">Дізнатись більше</a>
+                            <a class="more" href="#">Дізнатись більше</a>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
+                @endforeach
             </div>
         </div>
         <div class="book-tour">

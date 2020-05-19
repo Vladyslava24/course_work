@@ -7,8 +7,9 @@ use Illuminate\Support\Facades\Route;
  * Basic routes
  */
 Route::get('/', function () {
-    return view('landing');
 })->name('landing');
+
+Route::get('/', 'TourController@allData')->name('landing');
 
 Route::get('/tour', function () {
     return view('container_tour');
@@ -21,6 +22,8 @@ Route::get('/one-tour', function () {
 Route::get('/cruise', function () {
     return view('container_cruise');
 })->name('cruise');
+
+Route::get('/cruise', 'CruiseController@allData')->name('cruise');
 
 Route::get('/sale', function () {
     return view('desc_sale');

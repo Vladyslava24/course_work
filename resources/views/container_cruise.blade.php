@@ -42,25 +42,31 @@
         <span>Всі круїзи</span>
     </div>
     <div class="row row1">
+        @foreach($cruises as $cruise)
         <div class="col-sm-4">
             <div class="card">
                 <div class="picture" id="venecia">
                     <div class="grey">
                         <img src="pictures/cruise/mediterranean.jpeg" alt="#">
                     </div>
-                    <span class="country">Середземномор'я</span>
+                    <span class="country">{{$cruise->direction}}</span>
                     <br>
                     <span class="liner">на борту лайнера</span>
                     <br>
-                    <span class="liner">“Costa Fascinosa”</span>
+                    <span class="liner">“{{$cruise->liner}}”</span>
                     <br>
-                    <span class="price-c"> від 6 235 UAH</span>
+                    <span class="price-c"> від {{$cruise->price}} UAH</span>
                     <br>
                     <button class="button"><span>Дізнатись більше</span></button>
                 </div>
             </div>
+            <div class="space"></div>
         </div>
-        <div class="space_mob"></div>
+        @endforeach
+    </div>
+
+</div>
+        <!--<div class="space_mob"></div>
         <div class="col-sm-4">
             <div class="card">
                 <div class="picture" id="stambul">
@@ -214,9 +220,5 @@
                     <span class="price-c">від 25 000 UAH</span>
                     <br>
                     <button class="button"><span>Дізнатись більше</span></button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                </div>-->
 @endsection
